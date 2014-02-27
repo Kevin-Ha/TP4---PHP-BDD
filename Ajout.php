@@ -15,18 +15,17 @@
             <input id="per_nom" type="text" name="nom" value="" />
             
             <input id = "envoyer" type="submit" value="Créer"  />
+            <br />
+            <br />
+            <input id = "pers_reset" type="reset" value="Réinitialiser le champs" />
             
+            </form>
             <form action="Ajout_etudiants.php" method="post" />
             <p>
             <input type="submit" value="Ajouter des étudiants" />
             </p>
-            <input id = "pers_reset" type="reset" value="Réinitialiser le champs" />
             </form>
             <br />
-            <br />
-            
-            </form>
-
             <form action="index.php" method="post" />
             <p>
             <input type="submit" value="Retourner à l'accueil" />
