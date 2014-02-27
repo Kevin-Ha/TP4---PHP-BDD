@@ -14,9 +14,13 @@
         // Créer un objet de connexion à la base de données.
         $oDb = new PDO($dsn, $dbUser, $dbPass);
         
-        $oDb->query('SELECT * FROM promotion ORDER BY pro_nom ASC');
-        
-         
+       $oResultat = $oDb->query('SELECT * FROM promotion ORDER BY pro_nom ASC');
+       //Récupère la première ligne.
+       while ($promotion = $oResultat-> fetch()) {
+          echo '<p>', $promotion['pro_nom']; '</p>'; 
+       }
+        //Pour afficher ce que l'on récupère : var_dump($promotion);
+       
         // Récupérer toutes les promotions
         // Boucler tout pour les afficher
         ?>
