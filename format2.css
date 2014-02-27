@@ -1,8 +1,8 @@
 body {
-   background:url('image2.jpg')  fixed 50%;
-   background-size: cover;
-   font-family: Helvetica;
-   color: white;
+    background:url('image.jpg') no-repeat fixed top;
+    background-size: cover;
+    font-family: Helvetica;
+    color: white; 
 }
 
 h1 {
@@ -14,16 +14,9 @@ h1 {
     
 }
 
+
 form {
     width: 1000px;
     margin-left: auto;
     margin-right: auto;
-    
 }
-
-/*.error {
-   background-color: red; 
-   color: white;
-   padding: 3px;
-}*/
-
