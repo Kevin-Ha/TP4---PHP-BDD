@@ -49,7 +49,7 @@
         
             <form action="Ajout_etudiants.php" method="post" />
             <p>
-            <input type="submit" value="Ajouter des étudiants" />
+            <input type="submit" value="Ajouter un étudiant" />
             </p>
             </form>
             </div>
