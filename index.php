@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="format.css" />
         <meta charset="UTF-8">
         <title>IIA</title>
     </head>
@@ -15,14 +16,15 @@
         $oDb = new PDO($dsn, $dbUser, $dbPass);
         
        $oResultat = $oDb->query('SELECT * FROM promotion ORDER BY pro_nom ASC');
+       $oResultat->setFetchMode(PDO::FETCH_OBJ);
        
        
        echo'<p>Liste des ' , $oResultat->rowCount() , ' promotion(s) de l\'IIA : </p>';
        
        //Récupère les lignes
-       while ($promotion = $oResultat-> fetch()) {
+       while ($opromotion = $oResultat-> fetch()) {
           echo '<p>';
-          echo '<a href="Promotions.php">', $promotion['pro_nom']; 
+          echo '<a href="Promotions.php">', $opromotion->pro_nom, '</a>'; 
           echo '</p>';
        }
         //Pour afficher ce que l'on récupère : var_dump($promotion);
