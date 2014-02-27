@@ -6,12 +6,13 @@ and open the template in the editor.
 -->
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="format4.css" />
         <meta charset="UTF-8">
         <title></title>
     </head>
     <body>
         <?php
-        // put your code here
+        echo("Etudiant enregistré !");
         ?>
     </body>
 </html>

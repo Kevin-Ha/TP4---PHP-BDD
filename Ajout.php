@@ -16,6 +16,7 @@
             
             <input id = "envoyer" type="submit" value="Créer"  />
             <br />
+            <br />
             <input id = "pers_reset" type="reset" value="Réinitialiser le champs" />
             </form>
              

@@ -46,6 +46,12 @@
             <input type="submit" value="Ajouter une promotion" />
             </p>
             </form>
+        
+            <form action="Ajout_etudiants.php" method="post" />
+            <p>
+            <input type="submit" value="Ajouter des étudiants" />
+            </p>
+            </form>
             </div>
     </body>
 </html>
