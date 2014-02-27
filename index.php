@@ -15,9 +15,15 @@
         $oDb = new PDO($dsn, $dbUser, $dbPass);
         
        $oResultat = $oDb->query('SELECT * FROM promotion ORDER BY pro_nom ASC');
-       //Récupère la première ligne.
+       
+       
+       echo'<p>Liste des ' , $oResultat->rowCount() , ' promotion(s) de l\'IIA : </p>';
+       
+       //Récupère les lignes
        while ($promotion = $oResultat-> fetch()) {
-          echo '<p>', $promotion['pro_nom']; '</p>'; 
+          echo '<p>';
+          echo '<a href="Promotions.php">', $promotion['pro_nom']; 
+          echo '</p>';
        }
         //Pour afficher ce que l'on récupère : var_dump($promotion);
        
