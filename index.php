@@ -24,7 +24,7 @@
        echo'<form>';
        echo '<br>';
        echo '<br>';
-       echo'<p>Liste des ' , $oResultat->rowCount() , ' promotion(s) de l\'IIA : </p>';
+       echo'<p>Liste des ' , $oResultat->rowCount() , ' promotions de l\'IIA : </p>';
        echo '<br>';
        
        //Récupère les lignes
@@ -37,9 +37,6 @@
        }
        echo'</form>';
         //Pour afficher ce que l'on récupère : var_dump($promotion);
-       
-        // Récupérer toutes les promotions
-        // Boucler tout pour les afficher
         ?>
     </body>
 </html>

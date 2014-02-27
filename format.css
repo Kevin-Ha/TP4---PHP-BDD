@@ -1,5 +1,5 @@
 body {
-   background:url('image2.jpg')  fixed 50%;
+   background:url('accueil.jpg')  fixed 50%;
    background-size: cover;
    font-family: Helvetica;
    color: white;
@@ -20,10 +20,4 @@ form {
     margin-right: auto;
     
 }
-
-/*.error {
-   background-color: red; 
-   color: white;
-   padding: 3px;
-}*/
 

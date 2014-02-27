@@ -11,9 +11,6 @@
         <h1><center>Liste des étudiants</center></h1>
         <p><a href="index.php">Retour</a></p>
         <?php
-        //var_dump($_GET);
-        
-        //echo $_get['pro_id'];
         // Se connecter à la base de données
         $dsn = 'mysql:dbname=IIA;host=127.0.0.1';
         $dbUser = 'root';
@@ -37,10 +34,6 @@
           echo '</p>';
        }
        echo'</form>';
-        //Pour afficher ce que l'on récupère : var_dump($promotion);
-       
-        // Récupérer toutes les promotions
-        // Boucler tout pour les afficher
         ?>
     </body>
 </html>
