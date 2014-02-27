@@ -7,7 +7,7 @@
        <br />
        <br />
         <h1><center>Ajouter des étudiants</center></h1>
-         <form method="post" action= "" enctype="multipart/form-data">
+        <form method="post" action= "Envoyer_etu.php" enctype="multipart/form-data">
             <div>
                 <br />
                 <br />
