@@ -18,7 +18,22 @@
         // Créer un objet de connexion à la base de données.
         $oDb = new PDO($dsn, $dbUser, $dbPass);
         
-       $oResultat = $oDb->query('SELECT * FROM etudiant WHERE promotion_id =' . $_GET['pro_id'] . ' ORDER BY etu_nom, etu_prenom');
+        
+       $oResultat = $oDb->query('SELECT * '
+                                 . 'FROM etudiant '
+                                 . 'WHERE promotion_id = ' . $oDb->quote($_GET['pro_id'])
+                                 . ' ORDER BY etu_nom, etu_prenom');
+       
+       // On prépare une requête SQL en nommant des paramètres (plus rapide car en mémoire).
+       $oResultat = $oDb->prepare('SELECT * '
+                                  . 'FROM etudiant '
+                                  . 'WHERE promotion_id = :pro_id '
+                                  . 'ORDER BY etu_nom, etu_prenom');
+       
+       //Execute la requête en envoyant les paramètres.
+      
+       $oResultat->execute(array(':pro_id' => $_GET['pro_id']));
+               
        $oResultat->setFetchMode(PDO::FETCH_OBJ);
        
        echo'<form>';
