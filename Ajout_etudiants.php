@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="format4.css" />
         <meta charset="UTF-8">
        <title>Ajout etudiants</title>
+       <br />
+       <br />
         <h1><center>Ajouter des étudiants</center></h1>
          <form method="post" action= "" enctype="multipart/form-data">
             <div>
@@ -20,28 +23,6 @@
             <br />
             <br />
             
-            <label for= "per_nom" > • Age de l'étudiant:</label>
-            <input id="per_age" type="text" name="age" value="" />
-            
-            <br />
-            <br />
-            
-            <label for= "per_sexe" > • Sexe de l'étudiant :</label>
-                 <select id="per_sexe" type="select" name="sexe" value="" /> 
-                 <option>Sélectionnez</option>
-                 <option value="Masculin">Masculin</option>
-                 <option value="Féminin">Féminin</option> 
-                </select>
-            
-            <br />
-            <br />
-            
-            <label for= "per_email" > • Adresse e-mail de l'étudiant :</label>
-            <input id="per_email" type="email" name="email" value="" />
-            
-            <br />
-            <br />
-            
             <input id = "envoyer" type="submit" value="Créer"  />
             
             <br />
@@ -50,6 +31,15 @@
             <input id = "pers_reset" type="reset" value="Réinitialiser les champs" /> 
             <br /> 
             <br />
+            </form>
+        
+            <form action="index.php" method="post" />
+            <p>
+            <input type="submit" value="Retourner à l'accueil" />
+            </p>
+            </form>
+            </div>
+             
     </head>
     <body>
         <?php

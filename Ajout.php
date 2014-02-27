@@ -1,20 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="format3.css" />
         <meta charset="UTF-8">
         <title>Ajout promo</title>
+        <br />
+        <br />
         <h1><center>Ajouter une promotion</center></h1>
          <form method="post" action= "" enctype="multipart/form-data">
-            <div>
+
                 <br />
                 <br />
             <label for= "per_nom" > • Nom de la promotion:</label>
             <input id="per_nom" type="text" name="nom" value="" />
             
             <input id = "envoyer" type="submit" value="Créer"  />
+            
+            <form action="Ajout_etudiants.php" method="post" />
+            <p>
+            <input type="submit" value="Ajouter des étudiants" />
+            </p>
+            <input id = "pers_reset" type="reset" value="Réinitialiser le champs" />
+            </form>
             <br />
             <br />
-            <a href="Ajout_etudiants.php">Ajouter des étudiants</a>
+            
+            </form>
+
+            <form action="index.php" method="post" />
+            <p>
+            <input type="submit" value="Retourner à l'accueil" />
+            </p>
+            </form>
             </div>
     </head>
     <body>

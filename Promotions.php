@@ -6,10 +6,10 @@
         <title>Etudiants</title>
     </head>
     <body>
-        <br>
-        <br>
+        <br />
+        <br />
         <h1><center>Liste des étudiants</center></h1>
-        <p><a href="index.php">Retour</a></p>
+        
         <?php
         // Se connecter à la base de données
         $dsn = 'mysql:dbname=IIA;host=127.0.0.1';
@@ -50,5 +50,14 @@
        }
        echo'</form>';
         ?>
+
+        <br />
+        <br />
+        <form action="index.php" method="post" />
+        <p>
+        <input type="submit" value="Retour" />
+        </p>
+        </form>
+        </div>
     </body>
 </html>

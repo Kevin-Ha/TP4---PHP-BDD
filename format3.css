@@ -1,0 +1,23 @@
+body {
+   background:url('Ajout_promo.jpg')  fixed 50%;
+   background-size: cover;
+   font-family: Helvetica;
+   color: white;
+}
+
+h1 {
+    border: 7px outset white;
+    width: 400px;
+    color: #0000FF;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+form {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+

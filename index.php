@@ -39,10 +39,13 @@
        echo '<br>';
        echo '<br>';
        echo '<br>';
-       echo '<a href="Ajout.php">Ajouter une promotion</a>';
        echo'</form>';
-        //Pour afficher ce que l'on récupère : var_dump($promotion);
-        ?>
-        
+       ?>
+            <form action="Ajout.php" method="post" />
+            <p>
+            <input type="submit" value="Ajouter une promotion" />
+            </p>
+            </form>
+            </div>
     </body>
 </html>
